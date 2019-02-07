@@ -3,15 +3,18 @@
 # lower case, mixed case, or have leading / trailing spaces or
 # punctuation.
 
-def main():
-    tach_status = is_tachycardic()
 
-def is_tachycardic():
-    word_input = input("Please enter word: ")
+def main():
+    word_input = input('Please enter word:')
+    tach_status = is_tachycardic(word_input)
+
+
+def is_tachycardic(word_input):
     word = word_input.lower()
     tach_status = 'tachycardic' in word
     print("The answer is {}".format(tach_status))
     return tach_status
 
+
 if __name__ == "__main__":
-	main()
+    main()
