@@ -4,14 +4,16 @@
 # punctuation.
 
 def main():
-    tach_status = is_tachycardic()
+    word_input = input('Please enter word:')
+    tach_status = is_tachycardic(word_input)
 
-def is_tachycardic():
-    word_input = input("Please enter word: ")
+
+def is_tachycardic(word_input):
     word = word_input.lower()
     tach_status = 'tachycardic' in word
     print("The answer is {}".format(tach_status))
     return tach_status
 
+
 if __name__ == "__main__":
-	main()
+    main()
