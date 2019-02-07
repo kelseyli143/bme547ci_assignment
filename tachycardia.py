@@ -3,6 +3,7 @@
 # lower case, mixed case, or have leading / trailing spaces or
 # punctuation.
 
+
 def main():
     word_input = input('Please enter word:')
     tach_status = is_tachycardic(word_input)
